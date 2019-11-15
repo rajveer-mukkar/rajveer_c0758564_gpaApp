@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255443BE237F1AA6004BCC68 /* studentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255443BD237F1AA6004BCC68 /* studentFile.swift */; };
+		255443C0237F1C0A004BCC68 /* StudentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255443BF237F1C0A004BCC68 /* StudentDataViewController.swift */; };
+		255443C2237F1C21004BCC68 /* StudentSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255443C1237F1C21004BCC68 /* StudentSearchTableViewController.swift */; };
+		255443C6237F4BF3004BCC68 /* GpaCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255443C5237F4BF3004BCC68 /* GpaCalculationViewController.swift */; };
 		25FC2E1F237E316700C32B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC2E1E237E316700C32B17 /* AppDelegate.swift */; };
 		25FC2E21237E316700C32B17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC2E20237E316700C32B17 /* SceneDelegate.swift */; };
-		25FC2E23237E316700C32B17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC2E22237E316700C32B17 /* ViewController.swift */; };
 		25FC2E26237E316700C32B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FC2E24237E316700C32B17 /* Main.storyboard */; };
 		25FC2E28237E316900C32B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FC2E27237E316900C32B17 /* Assets.xcassets */; };
 		25FC2E2B237E316900C32B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FC2E29237E316900C32B17 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		255443BD237F1AA6004BCC68 /* studentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentFile.swift; sourceTree = "<group>"; };
+		255443BF237F1C0A004BCC68 /* StudentDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDataViewController.swift; sourceTree = "<group>"; };
+		255443C1237F1C21004BCC68 /* StudentSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSearchTableViewController.swift; sourceTree = "<group>"; };
+		255443C5237F4BF3004BCC68 /* GpaCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpaCalculationViewController.swift; sourceTree = "<group>"; };
 		25FC2E1B237E316700C32B17 /* rajveer_c0758564_gpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rajveer_c0758564_gpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FC2E1E237E316700C32B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25FC2E20237E316700C32B17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25FC2E22237E316700C32B17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25FC2E25237E316700C32B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25FC2E27237E316900C32B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25FC2E2A237E316900C32B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +64,14 @@
 			children = (
 				25FC2E1E237E316700C32B17 /* AppDelegate.swift */,
 				25FC2E20237E316700C32B17 /* SceneDelegate.swift */,
-				25FC2E22237E316700C32B17 /* ViewController.swift */,
 				25FC2E24237E316700C32B17 /* Main.storyboard */,
 				25FC2E27237E316900C32B17 /* Assets.xcassets */,
 				25FC2E29237E316900C32B17 /* LaunchScreen.storyboard */,
 				25FC2E2C237E316900C32B17 /* Info.plist */,
+				255443BD237F1AA6004BCC68 /* studentFile.swift */,
+				255443BF237F1C0A004BCC68 /* StudentDataViewController.swift */,
+				255443C1237F1C21004BCC68 /* StudentSearchTableViewController.swift */,
+				255443C5237F4BF3004BCC68 /* GpaCalculationViewController.swift */,
 			);
 			path = rajveer_c0758564_gpaApp;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FC2E23237E316700C32B17 /* ViewController.swift in Sources */,
 				25FC2E1F237E316700C32B17 /* AppDelegate.swift in Sources */,
 				25FC2E21237E316700C32B17 /* SceneDelegate.swift in Sources */,
+				255443C0237F1C0A004BCC68 /* StudentDataViewController.swift in Sources */,
+				255443BE237F1AA6004BCC68 /* studentFile.swift in Sources */,
+				255443C2237F1C21004BCC68 /* StudentSearchTableViewController.swift in Sources */,
+				255443C6237F4BF3004BCC68 /* GpaCalculationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
