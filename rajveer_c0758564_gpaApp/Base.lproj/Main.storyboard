@@ -59,6 +59,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searching" destination="wfR-wh-zoG" id="OId-Je-Eyc"/>
+                        <outlet property="tableViewData" destination="wfR-wh-zoG" id="bqi-Pw-rpG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQx-8V-JyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +243,7 @@
                         <outlet property="fifthTF" destination="8KF-Ba-bLF" id="oDu-cz-Ert"/>
                         <outlet property="firstTF" destination="Tbe-aR-L7F" id="0hX-KG-zp6"/>
                         <outlet property="fourthTF" destination="LcA-xB-YfN" id="SGh-XK-fYD"/>
+                        <outlet property="gpaCalculation" destination="y4z-pV-MvS" id="WkF-jB-kvh"/>
                         <outlet property="secondTF" destination="fha-CV-zaA" id="kds-og-XUn"/>
                         <outlet property="sub1" destination="6R6-9B-8Tb" id="Oqc-3J-Z6c"/>
                         <outlet property="sub1TF" destination="PVJ-am-RvZ" id="FbZ-Fe-CJJ"/>

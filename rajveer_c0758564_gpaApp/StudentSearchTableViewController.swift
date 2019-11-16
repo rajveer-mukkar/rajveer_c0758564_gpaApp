@@ -9,7 +9,13 @@
 import UIKit
 
 class StudentSearchTableViewController: UITableViewController ,UISearchBarDelegate {
-//    var searchdata : [String]
+    
+    
+    @IBOutlet weak var searching: UISearchBar!
+    
+    @IBOutlet var tableViewData: UITableView!
+    
+    var searchdata : [student]!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +57,11 @@ class StudentSearchTableViewController: UITableViewController ,UISearchBarDelega
         return true
     }
     */
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchdata = searchText.isEmpty ? student.My_Student : student.My_Student
+//        ????/
+        
+    }
 
     /*
     // Override to support editing the table view.
@@ -92,6 +103,10 @@ class StudentSearchTableViewController: UITableViewController ,UISearchBarDelega
         }
         
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        searchdata = student.My_Student
+        tableViewData.reloadData()
     }
    
 

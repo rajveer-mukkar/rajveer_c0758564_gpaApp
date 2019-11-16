@@ -50,6 +50,7 @@ class GpaCalculationViewController: UIViewController {
     
     @IBOutlet weak var sub5TextField: UITextField!
     
+    @IBOutlet weak var gpaCalculation: UILabel!
     
     
     
@@ -123,15 +124,7 @@ class GpaCalculationViewController: UIViewController {
                    print(total)
         var Cgpa = total/5
         print(Cgpa)
-    
-        
-        
-        
-        
-        
-        
-        
-        
+        gpaCalculation.text! = String(Float(Cgpa))
         
     }
     /*
