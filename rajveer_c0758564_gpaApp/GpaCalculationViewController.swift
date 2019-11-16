@@ -11,7 +11,7 @@ import UIKit
 class GpaCalculationViewController: UIViewController {
     var Marks:Double = 0.0
     var scores:Double = 0.0
-    var creditHours:Double = 0.0
+    var Hours:Double = 0.0
     var My_grades:Character?
     var creditScores:Double = 0.0
     
@@ -89,10 +89,51 @@ class GpaCalculationViewController: UIViewController {
         default:
           break
         }
-        creditScores = creditHours * scores
+        creditScores = Hours * scores
     }
     
 
+    @IBAction func CalculateButton(_ sender: UIButton) {
+        var marks_of_subjects:Double? = Double(sub1TextField.text!)
+        var Hours:Double? = Double(sub1TF.text!)
+        let mycourse = GpaCalculate(Marks: marks_of_subjects ?? 0)
+        var total = scores + 0
+        print("sum is \(total)")
+        print(scores)
+        var marks_of_subjects1:Double? = Double(sub2TextField.text!)
+         let mycourse1 = GpaCalculate(Marks: marks_of_subjects1 ?? 0)
+         total = scores + total
+        print("sum is \(total)")
+        print(scores)
+        var marks_of_subjects2:Double? = Double(sub3TextField.text!)
+                let mycourse2 = GpaCalculate(Marks: marks_of_subjects2 ?? 0)
+                total = scores + total
+               print("sum is \(total)")
+               print(scores)
+               var marks_of_subjects3:Double? = Double(sub4TextField.text!)
+                       let mycourse3 = GpaCalculate(Marks: marks_of_subjects3 ?? 0)
+                       total = scores + total
+                      print("sum is \(total)")
+                      print(scores)
+                      var marks_of_subjects4:Double? = Double(sub5TextField.text!)
+                              let mycourse4 = GpaCalculate(Marks: marks_of_subjects4 ?? 0)
+                              total = scores + total
+                             print("sum is \(total)")
+                             print(scores)
+                   print(total)
+        var Cgpa = total/5
+        print(Cgpa)
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
     /*
     // MARK: - Navigation
 
