@@ -15,34 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="T6y-gD-HsY">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" id="T6y-gD-HsY">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="stu" textLabel="H29-SM-Jay" rowHeight="40" style="IBUITableViewCellStyleDefault" id="CUy-ZG-6QP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stu" rowHeight="40" id="CUy-ZG-6QP">
                                 <rect key="frame" x="0.0" y="72" width="414" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CUy-ZG-6QP" id="YVs-Dg-LHK">
-                                    <rect key="frame" x="0.0" y="0.0" width="382.5" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H29-SM-Jay">
-                                            <rect key="frame" x="20" y="0.0" width="354.5" height="40"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="r51-JT-z2f" kind="show" id="llv-Qr-WRm"/>
-                                    <segue destination="r51-JT-z2f" kind="show" trigger="accessoryAction" id="yaL-xW-3KR"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -60,7 +47,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searching" destination="wfR-wh-zoG" id="OId-Je-Eyc"/>
+                        <outlet property="searching" destination="T6y-gD-HsY" id="Yfk-PA-ggp"/>
                         <outlet property="tableViewData" destination="wfR-wh-zoG" id="bqi-Pw-rpG"/>
                     </connections>
                 </tableViewController>
@@ -152,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAD 3004" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-am-RvZ">
-                                <rect key="frame" x="47" y="133" width="159" height="39"/>
+                                <rect key="frame" x="47" y="133" width="159" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,28 +227,23 @@
                     </view>
                     <navigationItem key="navigationItem" id="Abq-qK-CWD"/>
                     <connections>
-                        <outlet property="fifthTF" destination="8KF-Ba-bLF" id="oDu-cz-Ert"/>
-                        <outlet property="firstTF" destination="Tbe-aR-L7F" id="0hX-KG-zp6"/>
-                        <outlet property="fourthTF" destination="LcA-xB-YfN" id="SGh-XK-fYD"/>
+                        <outlet property="Sub1Label" destination="PVJ-am-RvZ" id="hJP-Z8-LUC"/>
+                        <outlet property="Sub2Label" destination="RYM-Ew-4Rv" id="qJj-T2-6yx"/>
+                        <outlet property="Sub3Label" destination="s0y-se-o4k" id="sCa-GO-geL"/>
+                        <outlet property="Sub4label" destination="N37-i9-b1g" id="N19-pj-Zz7"/>
+                        <outlet property="Sub5Label" destination="gvO-Rx-dvD" id="E6N-RW-Wbl"/>
                         <outlet property="gpaCalculation" destination="y4z-pV-MvS" id="WkF-jB-kvh"/>
-                        <outlet property="secondTF" destination="fha-CV-zaA" id="kds-og-XUn"/>
                         <outlet property="sub1" destination="6R6-9B-8Tb" id="Oqc-3J-Z6c"/>
-                        <outlet property="sub1TF" destination="PVJ-am-RvZ" id="FbZ-Fe-CJJ"/>
                         <outlet property="sub1TextField" destination="Tbe-aR-L7F" id="uI5-TK-HXG"/>
-                        <outlet property="sub2TF" destination="RYM-Ew-4Rv" id="hfq-sQ-uYi"/>
                         <outlet property="sub2TextField" destination="fha-CV-zaA" id="Uer-qt-LSc"/>
-                        <outlet property="sub3TF" destination="s0y-se-o4k" id="mNm-53-cit"/>
                         <outlet property="sub3TextField" destination="Dv0-5S-2nL" id="sNm-wj-kGm"/>
-                        <outlet property="sub4TF" destination="N37-i9-b1g" id="edT-Vt-3n5"/>
                         <outlet property="sub4TextField" destination="LcA-xB-YfN" id="gSw-Zm-GTa"/>
-                        <outlet property="sub5TF" destination="gvO-Rx-dvD" id="fGd-2P-7mL"/>
                         <outlet property="sub5TextField" destination="8KF-Ba-bLF" id="Abm-ie-WIL"/>
-                        <outlet property="thirdTF" destination="Dv0-5S-2nL" id="9gK-p9-8ep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1p-HA-FGr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="554"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="553.125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cO1-L7-2Ne">
@@ -280,7 +262,4 @@
             <point key="canvasLocation" x="-688" y="161"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yaL-xW-3KR"/>
-    </inferredMetricsTieBreakers>
 </document>

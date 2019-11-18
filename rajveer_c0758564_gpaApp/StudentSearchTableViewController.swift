@@ -18,7 +18,9 @@ class StudentSearchTableViewController: UITableViewController ,UISearchBarDelega
     var searchdata : [student]!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.dataSource = self
+        searching.delegate = self
+        searchdata = student.My_Student
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,17 +38,19 @@ class StudentSearchTableViewController: UITableViewController ,UISearchBarDelega
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
       
-        return student.My_Student.count
+        return searchdata.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "stu"){
+       let cell = tableView.dequeueReusableCell(withIdentifier: "stu")
 
         // Configure the cell...
-        cell.textLabel?.text = student.My_Student[indexPath.row].First_Name
-            return cell}
-        return UITableViewCell()
+        cell?.textLabel?.text = searchdata[indexPath.row].First_Name
+            return cell!
+            
+            
+       
     }
     
 
@@ -58,10 +62,18 @@ class StudentSearchTableViewController: UITableViewController ,UISearchBarDelega
     }
     */
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchdata = searchText.isEmpty ? student.My_Student : student.My_Student
-//        ????/
-        
-    }
+        searchdata = searchText.isEmpty ? student.My_Student : student.My_Student.filter{
+           (item: student) -> Bool in
+                        // If dataItem matches the searchText, return true to include it
+            //            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+                        let name = item.First_Name + " " + item.Last_Nmae
+                        return name.lowercased().contains(searchText.lowercased())
+                    }
+                    
+                    tableView.reloadData()
+                }
+            
+            
 
     /*
     // Override to support editing the table view.
